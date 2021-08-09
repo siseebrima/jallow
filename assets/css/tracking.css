@@ -1,0 +1,176 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
+    width: 100%;
+    overflow-x: hidden;
+}
+.logo{
+    width: 90px;
+    height: 40px;
+}
+.user-icon, .search-icon{ 
+    width: 22px;
+    height: 22px;
+}
+nav ul li a{
+    font-size: 18px;
+    margin-left: 20px;
+}
+.menu-icon{
+    width: 20px;
+    height: 20px;
+}
+.menu-button{
+    visibility: hidden;
+}
+main{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+main h2{
+    font-size: 50px;
+    padding-top: 30px;
+}
+main p{
+    font-size: 23px;
+}
+.search{
+    width: 350px;
+    height: 45px;
+}
+.explain{
+    margin-top: 10px;
+}
+.form{
+    display: flex;
+    
+}
+.form button{
+    background: #03666d;
+    color: white;
+    margin-left: 10px;
+    width: 100px;
+}
+
+
+/*footer styling*/
+
+.footer{
+    height: 340px;
+    background: rgba(0, 0, 0, 0.055);
+}
+.footer ul{
+    list-style-type: none;
+}
+.footer ul li{
+    padding-bottom: 15px;
+}
+.footer ul li a{
+    color: black;
+    font-weight: 600;
+    font-size: 18px;
+    
+}
+.foot{
+    padding-top: 50px;
+}
+hr{
+    visibility: hidden;
+}
+.copyright{
+    padding-left: 45px;
+}
+.social i{
+    padding-right: 20px;
+    font-size: 22px;
+}
+
+/*styling for the fullscreen nav*/
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+    visibility: visible;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+
+
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px
+    }
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+    
+  }
+
+/*end of styling for the fullscreen nav*/ 
+
+
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 767px) {
+    .menu-button{
+        visibility: visible;
+        cursor: pointer;
+    }
+
+    .logo{
+        width: 70px;
+        height: 30px;
+    }
+        /*FOOTER STYLING FOR MEDIA QUERIES*/
+
+        .footer{
+            height: 800px;
+        }
+        .footer ul li{
+            padding-bottom: 1px;
+        }
+        hr{
+            visibility: visible;
+        }
+        .social{
+            padding-left: 45px;
+        }
+}

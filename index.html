@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/d8dc8c26b1.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>jallow Transport</title>
+  </head>
+  <body>
+      <header>
+    <nav class="navbar navbar-light navbar-expand-md">
+        <div class="container-fluid"><a class="navbar-brand text-light" href="#">
+            <img src="assets/images/nlogo.png" alt="" class="img-fluid logo">
+        </a><div class='menu-button' data-toggle="collapse" onclick="openNav()">
+            <img src="assets/images/menu.png" alt="" class="img-fluid menu-icon">
+        </div>
+            <div class="collapse navbar-collapse"
+                id="navcol-1">
+                <ul class="nav navbar-nav mx-auto">
+                    <li role="presentation" class="nav-item"><a class="nav-link active price text-light" href="#">Home</a></li>
+                    <li role="presentation" class="nav-item"><a class="nav-link text-light" href="#">Book</a></li>
+                    <li role="presentation" class="nav-item"><a class="nav-link text-light" href="tracking.html">Tracking</a></li>
+                    <li role="presentation" class="nav-item"><a class="nav-link text-light" href="#">Schedule</a></li>
+                    <li role="presentation" class="nav-item"><a class="nav-link text-light" href="#">Logistics solutions</a></li>
+                </ul>
+                <ul class="nav navbar-nav ml-auto">
+                    <li role="presentation" class="nav-item"><a class="nav-link active text-light mr-3" href="#">
+                        <img src="assets/images/whitesearch.png" alt="" class="img-fluid user-icon">
+                    </a></li>
+                    <li role="presentation" class="nav-item"><a class="nav-link text-light" href="#">
+                        <img src="assets/images/whiteuser.png" alt="" class="img-fluid search-icon">
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+        <!--navigation menu for mobile devices-->
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+              <a href="#">Home</a>
+              <a href="#">Book</a>
+              <a href="tracking.html">Tracking</a>
+              <a href="#">Schedule</a>
+              <a href="#"> Logistic solutions</a>
+            </div>
+          </div>
+    <!--the header intro-->
+    <div class="container intro">
+        <div class="row">
+            <div class="col-md-6 text-intro">
+                <h2>
+                    We move goods and services better and faster across borders
+                </h2>
+                <button class="btn btn-default get-info-button text-center">Get info</button>
+            </div>
+            <div class="col-md-6 second">
+                <div class="card tracking-box">
+                    <div class="card-body">
+                      <div class="card-title">Tracking</div>
+                      <div class="card-text">
+                        <form>
+                          <input type="search" id="search" class="form-control mt-4 search-box" placeholder="Enter a tracking ID" >
+                          <div id="error" class="error text-danger">Please enter a tracking number</div>
+                          <button id="btn" type="button" onclick="check()" class="btn btn-default tracking-id-search-button">Search</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+<div class="container-fluid lead mt-5">
+    <h2 class="h2">Logistics Solutions</h2>
+<p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non doloremque quo magnam nihil quae obcaecati cum 
+    earum assumenda veritatis debitis. Eum numquam assumenda repellat provident debitis, dolorem aspernatur facilis qui.
+</p>
+<button class="btn btn-default solution">See Solutions</button>
+</div>
+
+<div class="container-fluid first-cards">
+<div class="row">
+  <div class="col-sm-3">
+    <div class="card">
+      <img src="assets/images/container.svg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text">We do Importation and exportation of goods , no matter the height, weight or size
+           we got you covered
+        </p>
+      </div>
+    </div>
+  </div>
+  <!--end of one card-->
+  <div class="col-sm-3">
+    <div class="card">
+      <img src="assets/images/journey.svg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text">We transport your goods through air, with cargo planes, making it safer and more faster
+           for you to recieve your goods
+        </p>
+      </div>
+    </div>
+      </div>
+      <!--end of one card-->
+      <div class="col-sm-3">
+        <div class="card">
+          <img src="assets/images/takeout.svg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">we deliver your items to you in good and safe conditions , no breakage or damages
+              during movement of goods 
+            </p>
+          </div>
+        </div>
+          </div>
+          <!--end of one card-->
+          <div class="col-sm-3">
+            <div class="card">
+              <img src="assets/images/season.svg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">We are timely as being consious about not wasting your time is a priority to us</p>
+              </div>
+            </div>
+              </div>
+</div>
+<!--end of one card-->
+</div>
+
+
+<div class="container-fluid news mt-5">
+<div class="news-head">
+  <h2>Latest News</h2>
+  <hr>
+
+  <div class="row news-row">
+    <div class="col-md-3">
+      <div class="card news-card1">
+        <div class="card-body">
+          <h5 class="card-title">Stock market and shares</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="card-link text-light">Read More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card news-card2">
+        <div class="card-body">
+          <h5 class="card-title">Dollar keeps rising</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="card-link text-light">Read More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card news-card3">
+        <div class="card-body">
+          <h5 class="card-title">import and export companies</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="card-link text-light">Read More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card news-card4">
+        <div class="card-body">
+          <h5 class="card-title">Getting fast deliveries</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="card-link text-light">Read More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="container-fluid strategy">
+  <div class="row">
+    <div class="col-md-8 info">
+      <h2>
+        New business strategy for importers and exporters
+      </h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita ad assumenda quam. Tempora ut assumenda corporis 
+        ostrum consequatur, cupiditate dignissimos numquam porro molestiae perferendis adipisci nam officiis incidunt 
+        similique modi? Sed tenetur excepturi sequi asperiores 
+</p>
+        <div class="btn btn-default strategy-button">Learn More</div>
+    </div>
+    <div class="col-md-4">
+      <img src="assets/images/adeolu.jpg" alt="" class="img-fluid">
+    </div>
+  </div>
+
+  <div class="row second-row">
+    <div class="col-md-8 info">
+      <h2>
+        Taking goods abroad just got easier and faster
+      </h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita ad assumenda quam. Tempora ut assumenda corporis 
+        ostrum consequatur, cupiditate dignissimos numquam porro molestiae perferendis adipisci nam officiis incidunt 
+        similique modi? Sed tenetur excepturi sequi asperiores 
+</p>
+        <div class="btn btn-default strategy-button">Learn More</div>
+    </div>
+    <div class="col-md-4">
+      <img src="assets/images/container.jpg" alt="" class="img-fluid">
+    </div>
+  </div>
+</div>
+</main>
+
+
+<footer>
+<div class="footer">
+  <div class="the-fluid">
+    <div class="row foot">
+      <div class="col-md-3">
+        <ul>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Career</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Growth</a></li>
+          <li><a href="#">Feeds</a></li>
+        </ul>
+        <hr>
+      </div>
+
+      <div class="col-md-3">
+        <ul>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">Investors</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">Support</a></li>
+          <li><a href="#">Procurement</a></li>
+        </ul>
+        <hr>
+      </div>
+      <div class="col-md-3">
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms and conditions</a></li>
+          <li><a href="#">Cookie policy</a></li>
+          <li><a href="#">Preference</a></li>
+        </ul>
+        <hr>
+      </div>
+      <div class="col-md-3">
+        <ul>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">Visit us</a></li>
+          <li><a href="#">Call us</a></li>
+          <li><a href="#">Container service</a></li>
+          <li><a href="#">Vessel schedule</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-7 copyright">
+        <p>&copy; Jallow Transporters 2021</p>
+      </div>
+      <div class="col-md-5 social">
+        <a href="#"><i class="fab fa-twitter-square"></i></a>
+        <a href="#"><i class="fab fa-facebook-square"></i></a>
+        <a href="#"><i class="fab fa-instagram-square"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</footer>
+
+
+<!--script for nav-->
+<script>
+    function openNav() {
+      document.getElementById("myNav").style.width = "100%";
+    }
+    
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    }
+    /* end of script for nav*/
+
+
+    function check(){
+        let error = document.getElementById("error");
+        let box = document.getElementById("search").value;
+        if(box == ""){
+            error.style.display = "block"
+        }
+    }
+
+    </script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

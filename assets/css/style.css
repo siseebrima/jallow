@@ -1,0 +1,299 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
+    width: 100%;
+    overflow-x: hidden;
+}
+header{
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.616),rgba(0, 0, 0, 0.616) ), url('../images/load.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 610px;
+    width: 100%;
+}
+.logo{
+    width: 90px;
+    height: 40px;
+}
+.user-icon, .search-icon{ 
+    width: 22px;
+    height: 22px;
+}
+nav ul li a{
+    font-size: 18px;
+    margin-left: 20px;
+}
+.intro{
+    margin-top: 150px;
+}
+.intro h2{
+    color: white;
+    font-size: 50px;
+}
+.get-info-button{
+    color: white;
+    background-color: #03666d;
+    width: 150px;
+    height: 50px;
+}
+.tracking-id-search-button{
+    color: white;
+    background-color: #03666d;
+    width: 70px;
+    height: 40px;
+    margin-top: 15px;
+}
+.tracking-box{
+    width: auto;
+    border-radius: 0%;
+    margin-right: auto;
+}
+
+.tracking-box .card-title{
+    font-size: 27px;
+}
+.menu-icon{
+    width: 20px;
+    height: 20px;
+}
+.overlay{
+   visibility: hidden; 
+}
+.menu-button{
+    visibility: hidden;
+}
+.error{
+    display: none;
+}
+.solution{
+    color: black;
+    background-color: white;
+    width: 150px;
+    height: 50px;
+    border: solid 1px grey;
+}
+.solution:hover{
+    color: white;
+    background: #03666d;
+    border: none;
+}
+.card-img-top{
+    height: 200px;
+}
+.first-cards{
+    margin-top: 30px;
+}
+
+.first-cards .card{
+    height: 350px;
+    background-color: #8181810e;
+    border-color: white;
+}
+.card-img-overlay {
+    background-color: rgba(#000, 0.4);
+}
+.news-card1{
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.438),rgba(0, 0, 0, 0.438) ), url('../images/discussion.jpg');
+    color: white;
+    background-position: center;
+    background-size: cover;
+}
+.news-card2{
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.438),rgba(0, 0, 0, 0.438) ), url('../images/money.jpg');
+    color: white;
+    background-position: center;
+    background-size: cover;
+}
+.news-card3{
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.438),rgba(0, 0, 0, 0.438) ), url('../images/ship.jpg');
+    color: white;
+    background-position: center;
+    background-size: cover;
+}
+.news-card4{
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.438),rgba(0, 0, 0, 0.438) ), url('../images/office.jpg');
+    color: white;
+    background-position: center;
+    background-size: cover;
+}
+.strategy{
+    margin-top: 150px;
+}
+h2{
+    font-weight: 500;
+}
+.strategy h2{
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+.strategy p{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.strategy-button{
+    background: #03666d;
+    color: white;
+}
+.info{
+    align-items: center;
+}
+.second-row{
+    margin-top: 100px;
+}
+.news-row{
+    margin-top: 30px;
+}
+main{
+    margin-bottom: 50px;
+}
+/*footer styling*/
+
+.footer{
+    height: 340px;
+    background: rgba(0, 0, 0, 0.055);
+}
+.footer ul{
+    list-style-type: none;
+}
+.footer ul li{
+    padding-bottom: 15px;
+}
+.footer ul li a{
+    color: black;
+    font-weight: 600;
+    font-size: 18px;
+    
+}
+.foot{
+    padding-top: 50px;
+}
+hr{
+    visibility: hidden;
+}
+.copyright{
+    padding-left: 45px;
+}
+.social i{
+    padding-right: 20px;
+    font-size: 22px;
+}
+   
+
+/*media queries*/
+
+@media screen and (max-width: 767px) {
+
+    .intro{
+        margin-top: 50px;
+    }   
+    .intro h2{
+        /* text-align: center; */
+        font-size: 40px;
+    }
+    .get-info-button{
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+    .text-intro{
+        text-align: center;
+    }
+    .menu-button{
+        visibility: visible;
+        cursor: pointer;
+    }
+    .logo{
+        width: 70px;
+        height: 45px;
+    }
+    .first-cards .card{
+        margin-top: 15px;
+    }
+    .news-row .card{
+        margin-top: 20px;
+    }
+    .strategy-button{
+        margin-bottom: 20px;
+    }
+    .strategy{
+        margin-top: 50px;
+    }
+    .second-row{
+        margin-top: 60px;
+    }
+    /*FOOTER STYLING FOR MEDIA QUERIES*/
+
+    .footer{
+        height: 800px;
+    }
+    .footer ul li{
+        padding-bottom: 1px;
+    }
+    hr{
+        visibility: visible;
+    }
+    .social{
+        padding-left: 45px;
+    }
+
+       
+ /*styling for the fullscreen nav*/
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+    visibility: visible;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px
+    }
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+    
+  }
+
+/*end of styling for the fullscreen nav*/  

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/d8dc8c26b1.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="assets/css/tracking.css">
+    <title>Tracking</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <img src="assets/images/nlogo.png" alt="" class="img-fluid logo">
+            </a><div class='menu-button' data-toggle="collapse" onclick="openNav()">
+                <img src="assets/images/menu.png" alt="" class="img-fluid menu-icon">
+            </div>
+                <div class="collapse navbar-collapse"
+                    id="navcol-1">
+                <ul class="nav navbar-nav mx-auto">
+                    <li role="presentation" class="nav-item"><a class="nav-link active price text-light" href="index.html">Home</a></li>
+                    <li role="presentation" class="nav-item"><a class="nav-link text-light" href="#">Book</a></li>
+                    <li role="presentation" class="nav-item"><a class="nav-link text-light" href="#">Tracking</a></li>
+                    <li role="presentation" class="nav-item"><a class="nav-link text-light" href="#">Schedule</a></li>
+                    <li role="presentation" class="nav-item"><a class="nav-link text-light" href="#">Logistics solutions</a></li>
+                </ul>
+                <ul class="nav navbar-nav ml-auto">
+                    <li role="presentation" class="nav-item"><a class="nav-link active text-light mr-3" href="#">
+                        <img src="assets/images/whitesearch.png" alt="" class="img-fluid user-icon">
+                    </a></li>
+                    <li role="presentation" class="nav-item"><a class="nav-link text-light" href="#">
+                        <img src="assets/images/whiteuser.png" alt="" class="img-fluid search-icon">
+                    </a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    <!--navigation menu for mobile devices-->
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+              <a href="index.html">Home</a>
+              <a href="#">Book</a>
+              <a href="#">Tracking</a>
+              <a href="#">Schedule</a>
+              <a href="#"> Logistic solutions</a>
+            </div>
+          </div>
+    <!--the header intro-->
+    </header>
+
+    <main>
+        <h2>Tracking</h2>
+        <p>Container/transport document number</p>
+        <div class="form"><input type="text" class="form-control search" id="search-bar"><button class="btn btn-default get-info-button text-center">Search</button></div>
+        <p style="font-size: 17px;" class="explain">Container number is made of 4 letters and 7 digits. <br>
+          Transport document number consists of 9 characters.</p>
+    </main>
+
+
+    <footer>
+        <div class="footer">
+          <div class="the-fluid">
+            <div class="row foot">
+              <div class="col-md-3">
+                <ul>
+                  <li><a href="#">About us</a></li>
+                  <li><a href="#">Career</a></li>
+                  <li><a href="#">News</a></li>
+                  <li><a href="#">Growth</a></li>
+                  <li><a href="#">Feeds</a></li>
+                </ul>
+                <hr>
+              </div>
+        
+              <div class="col-md-3">
+                <ul>
+                  <li><a href="#">Contact us</a></li>
+                  <li><a href="#">Investors</a></li>
+                  <li><a href="#">Press</a></li>
+                  <li><a href="#">Support</a></li>
+                  <li><a href="#">Procurement</a></li>
+                </ul>
+                <hr>
+              </div>
+              <div class="col-md-3">
+                <ul>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Terms and conditions</a></li>
+                  <li><a href="#">Cookie policy</a></li>
+                  <li><a href="#">Preference</a></li>
+                </ul>
+                <hr>
+              </div>
+              <div class="col-md-3">
+                <ul>
+                  <li><a href="#">Contact us</a></li>
+                  <li><a href="#">Visit us</a></li>
+                  <li><a href="#">Call us</a></li>
+                  <li><a href="#">Container service</a></li>
+                  <li><a href="#">Vessel schedule</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-7 copyright">
+                <p>&copy; Jallow Transporters 2021</p>
+              </div>
+              <div class="col-md-5 social">
+                <a href="#"><i class="fab fa-twitter-square"></i></a>
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                <a href="#"><i class="fab fa-instagram-square"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+              </div>
+            </div>
+        
+          </div>
+        </div>
+        
+        </footer>
+
+<script>
+        function openNav() {
+      document.getElementById("myNav").style.width = "100%";
+    }
+    
+    function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+    }
+</script>
+</body>
+</html>
